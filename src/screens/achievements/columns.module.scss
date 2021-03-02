@@ -1,0 +1,102 @@
+.imageCol{
+  width: 75px;
+}
+
+.nameCol{
+  min-width: 100px;
+}
+
+.goalTypeCol {
+  color: #60BEDB;
+}
+.partnerLogoCol{
+  max-width: 80px;
+}
+
+.goalDoneCol{
+  min-width: 130px;
+  max-width: 280px;
+
+}
+
+.emailCol{
+  a {
+    text-decoration: underline;
+  }
+}
+
+.partnerTextcol {
+  .partnerLink {
+    display: block;
+    width: 150px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-decoration: underline;
+  }
+}
+
+.actionsCol{
+  padding-right: 30px;
+}
+
+.blockOperations {
+  display: grid;
+  gap: 5px;
+  .btns{
+    width: 80px;
+  }
+}
+
+.editing {
+  background: #F0F0F0;
+}
+
+.upload{
+  display: flex;
+  align-items: center;
+}
+
+.editGoalText{
+  width: 250px;
+  display: grid;
+  gap: 5px;
+}
+
+.editGoalType{
+  width: 110px;
+}
+
+.editGrade{
+  display: flex;
+
+  .grade{
+    width: 55px;
+  }
+  .grade + .grade {
+    margin-left: 5px;
+  }
+}
+
+.editRegion{
+  min-width: 80px;
+}
+
+.editPartnerTextLink{
+  width: 200px;
+  display: grid;
+  gap: 5px;
+}
+
+.editPartner{
+  width: 90px;
+}
+
+.verticalAlign {
+  vertical-align: baseline !important;
+}
+
+.validation{
+  color: red;
+  font-size: 10px;
+}

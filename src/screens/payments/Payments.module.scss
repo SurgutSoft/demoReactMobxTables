@@ -1,0 +1,35 @@
+
+.filtersContainer {
+
+  .select {
+    width: 155px;
+  }
+
+  .select + .select {
+    margin-left: 20px;
+  }
+
+}
+
+td > a {
+  text-decoration: underline;
+}
+
+.chart {
+  min-width: 500px;
+  max-width: 700px;
+}
+
+.chartTooltip {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+
+.donorMessage {
+  max-width: 400px;
+
+  small {
+    font-size: 12px;
+  }
+}

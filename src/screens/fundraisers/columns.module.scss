@@ -1,0 +1,147 @@
+.fundrNameCol{
+  max-width: 180px;
+  min-width: 100px;
+  a{
+    color: black;
+    &:hover {
+      color: black;
+    }
+  }
+}
+
+.intercomCol {
+  display: flex;
+  justify-content: left;
+  width: 30px;
+}
+
+.activeCol {
+  min-width:80px;
+}
+
+.schoolCol {
+  display: flex;
+  min-width: 130px;
+  max-width: 200px;
+
+  a{
+    color: black;
+    &:hover {
+      color: black;
+    }
+  }
+
+  .locationIcon {
+    padding-right: 3px;
+    .markerIcon {
+      width: 15px;
+      opacity: 0.5;
+    }
+  }
+}
+
+.adminEventCol{
+  display: flex;
+  align-items: center;
+  min-width: 120px;
+  max-width: 210px;
+  word-break: break-all;
+
+  .avatar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    overflow: hidden;
+    background-color: rgba(0,0,0,.03);
+    border: 1px solid #dadada;
+    border-radius: 100%;
+  
+    img{
+      width: 38px;
+      height: 38px;
+    }
+  }
+
+  .adminInfo{
+    display: grid;
+    gap: 0px;
+    padding-left: 5px;
+  }
+}
+
+.empty {
+  color: rgba(0, 0, 0, 0.5);
+  font-weight: 400;
+}
+
+.statusCol{
+  max-width: 60px;
+}
+.status {
+
+  width: 7%;
+  max-width: 95px;
+    div{
+    display: inline-block;
+    min-width: 80px;
+    align-items: center;
+    text-align: center;
+    font-size: 12px;
+    padding: 2px 8px;
+    border-radius: 10rem;
+    white-space: nowrap;
+  }
+}
+
+td .closed, td .deleted {
+  background: #ccc;
+  color: #fff;
+}
+
+.row-deleted{
+  opacity: 0.4;
+  text-decoration: line-through;
+}
+
+.unapproved {
+  background: #fcb202;
+  color: #fff;
+}
+
+.fundraising{
+  background: #6bc66e;
+  color: #fff;
+}
+
+.approved {
+  background: #fff;
+  border: 1px solid #ccc;
+  color: #333;
+}
+
+.preparing {
+  background: #0689D4;
+  color: #fff;
+}
+
+.columnStatus {
+  width: 2%;
+  max-width: 60px;
+}
+
+.closed, .deleted {
+  background: #ccc;
+  color: #fff;
+}
+
+.modal{
+  display: grid;
+  font-weight: bold;
+}
+
+.row-deleted{
+  opacity: 0.4;
+  text-decoration: line-through;
+}

@@ -1,0 +1,54 @@
+.coverCol {
+  max-width: 60px;
+  min-width: 50px;
+  .cover {
+    width: 60px;
+    border-radius: 3px;
+    background-color: #ccc;
+    height: 90px;
+  }
+}
+
+.descriptionCol {
+  max-width: 400px;
+  min-width: 250px;
+
+  p {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    word-wrap: break-word;
+    max-height: 3.6em;
+    line-height: 1.2em;
+    font-weight: lighter;
+  }
+  a{
+    color: #6C9CC8;
+  }
+
+  .categories {
+    color: #999 !important;
+    font-size: 12px;
+    display: block;
+    text-decoration: none;
+  }
+}
+
+.authorCol{
+  max-width: 250px;
+  min-width: 200px;
+  .author{
+    color: black;
+    font-weight: bold;
+  }
+}
+
+.bwbCol{
+  min-width: 100px;
+
+  a{
+    color: #6C9CC8;
+  }
+}

@@ -1,0 +1,48 @@
+image: ubuntu
+
+before_script:
+  - 'which ssh-agent || ( apt-get update -y && apt-get install openssh-client git -y )'
+  - eval $(ssh-agent -s)
+  - echo "$DEPLOY_KEY" | tr -d '\r' | ssh-add - > /dev/null
+  - mkdir -p ~/.ssh
+  - chmod 700 ~/.ssh
+  - ssh-keyscan rfms.pledgetree.com >> ~/.ssh/known_hosts
+  - ssh-keyscan dev-rfms.pledgetree.com >> ~/.ssh/known_hosts
+  - ssh-keyscan gitlab.com >> ~/.ssh/known_hosts
+  - chmod 644 ~/.ssh/known_hosts
+
+stages:
+  - build
+  - deploy
+
+build:
+  stage: build
+  image: node:10.19.0
+  before_script:
+    - node -v
+    - npm -v
+    - npm i
+  script:
+    - CI=false npm run build
+  artifacts:
+    paths:
+      - build/
+    expire_in: 10d
+  only:
+    - master
+    - develop
+
+deploy:
+  stage: deploy
+  script:
+    - scp -r build/* gitlab@dev-rfms.pledgetree.com:/var/www/sa-ui
+    - scp -r build/* gitlab@rfms.pledgetree.com:/var/www/sa-ui
+  environment:
+    name: frontend
+  dependencies:
+    - build
+  only:
+    - develop
+    - master
+
+

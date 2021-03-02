@@ -1,0 +1,16 @@
+.filtersContainer{
+  display: flex;
+
+  .block {
+    padding-left: 3px;
+    margin-bottom: 20px;
+
+    .select{
+      width: 135px;
+    }
+
+    .label{
+      font-size: 12px;
+    }
+  }
+}

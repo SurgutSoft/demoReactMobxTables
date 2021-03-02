@@ -1,0 +1,36 @@
+.link{
+  color: #6C9CC8;
+
+  &:hover{
+    text-decoration: underline;
+    cursor: pointer;
+  }
+}
+
+.notActiveLink {
+  &:hover {
+    color: black;
+    text-decoration: none;
+    cursor: text;
+  }
+}
+
+.searchBlock{
+  display: flex;
+
+  .titleInput{
+    width: 250px;
+  }
+
+  .authorInput{
+    width: 150px;
+  }
+
+  .select{
+    width: 140px;
+  }
+
+  .btns{
+    margin-left: 20px;
+  }
+}

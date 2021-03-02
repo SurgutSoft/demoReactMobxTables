@@ -1,0 +1,114 @@
+.idCol{
+  //max-width: 25px;
+}
+
+.avatar{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 34px;
+  height: 34px;
+  overflow: hidden;
+  background-color: rgba(0,0,0,.03);
+  border: 1px solid #dadada;
+  border-radius: 100%;
+
+  img{
+    width: 32px;
+    height: 32px;
+  }
+}
+
+.profileNameCol {
+  @extend.elispis;
+  min-width: 80px;
+  max-width: 145px;
+  a{
+    color: black;
+    &:hover {
+      color: black;
+    }
+  }
+}
+
+.fullNameColl{
+  @extend.elispis;
+  max-width: 150px;
+}
+
+.eventCol{
+  @extend.elispis;
+  max-width: 200px;
+}
+
+.emailCol{
+  display: grid;
+  .email {
+    @extend.elispis;
+    min-width: 170px;
+    max-width: 220px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .verified{
+    font-size: 12px;
+    color: #91aa98;
+  }
+}
+
+.authCol{
+  width: 18px;
+}
+
+.managedCol{
+  @extend.elispis;
+  //min-width: 80px;
+  max-width: 80px;
+
+}
+
+.sortCol{
+  display: flex;
+  div {
+    font-size: 10px;
+    font-weight: 400;
+  }
+
+  img{
+    margin-left: 5px;
+    opacity: 0.4;
+  }
+
+  .active {
+    margin-left: 5px;
+    opacity: 1;
+  }
+}
+
+.donCol{
+  color: black;
+  &:hover {
+    color: black;
+  }
+}
+
+.elispis {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.intercomCol {
+  display: flex;
+  justify-content: left;
+  max-width: 50px;
+}
+
+.activeCol{
+  max-width: 80px;
+}
+
+.createdCol{
+  max-width: 80px;
+}

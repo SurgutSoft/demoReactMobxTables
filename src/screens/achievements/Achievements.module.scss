@@ -1,0 +1,9 @@
+.filtersContainer{
+  .select {
+    width: 135px;
+  }
+
+  .select + .select {
+    margin-left: 20px;
+  }
+}
